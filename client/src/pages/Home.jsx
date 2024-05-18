@@ -3,7 +3,10 @@ import { useQuery } from "@apollo/client";
 import { QUERY_MATCHUPS } from "../utils/queries";
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_MATCHUPS);
+  const { loading, data } = useQuery(QUERY_MATCHUPS, {
+    fetchPolicy: "no-cache",
+  });
+
   const matchups = data?.matchups || [];
 
   return (
@@ -13,21 +16,21 @@ const Home = () => {
       </div>
       <div className="card-body m-5">
         <h2>Here is a list of matchups you can vote on:</h2>
-        <ul className="square">
-          {matchups.map((matchup) => {
-            return (
-              <li key={matchup._id}>
-                {loading ? (
-                  <div>Loading...</div>
-                ) : (
+        {loading ? (
+          <div>Loading...</div>
+        ) : (
+          <ul className="square">
+            {matchups.map((matchup) => {
+              return (
+                <li key={matchup._id}>
                   <Link to={{ pathname: `/matchup/${matchup._id}` }}>
                     {matchup.tech1} vs. {matchup.tech2}
                   </Link>
-                )}
-              </li>
-            );
-          })}
-        </ul>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
       <div className="card-footer text-center m-3">
         <h2>Ready to create a new matchup?</h2>
