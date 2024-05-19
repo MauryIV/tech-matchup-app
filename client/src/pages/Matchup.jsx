@@ -26,7 +26,7 @@ const Matchup = () => {
     event.preventDefault();
     try {
       const { data } = await createMatchup({
-        variable: { ...formData },
+        variables: { ...formData },
       });
       navigate(`/matchup/${data.createMatchup._id}`);
     } catch (err) {

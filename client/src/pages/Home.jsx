@@ -7,7 +7,7 @@ const Home = () => {
     fetchPolicy: "no-cache",
   });
 
-  const matchups = data?.matchups || [];
+  const matchupList = data?.matchups || [];
 
   return (
     <div className="card bg-white card-rounded w-50">
@@ -20,7 +20,7 @@ const Home = () => {
           <div>Loading...</div>
         ) : (
           <ul className="square">
-            {matchups.map((matchup) => {
+            {matchupList.map((matchup) => {
               return (
                 <li key={matchup._id}>
                   <Link to={{ pathname: `/matchup/${matchup._id}` }}>
