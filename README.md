@@ -1,47 +1,70 @@
-# Module 21 Mini-Project: Tech Matchup App
+<a id="title"></a>
+# Tech Matchup App 
 
-In this mini-project, you are given a fully functioning MERN-stack application that allows users to create a matchup between two technologies and vote on their favorite technology. The application currently uses a RESTful API. You will need to refactor it to use a GraphQL API built with Apollo Server and Apollo Client.
+<a id="description"></a>
+## Description
+This is a simple voting app for a few libraries and databases. User can vote for preffered or choose new ones to pitch against each other.
 
-## User Stories
+## Table of Contents
+- [Title](#title)
+- [Description](#description)
+- [Badges](#badges)
+- [Visuals](#visuals)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tests](#tests)
+- [Questions](#questions)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [Authors and Acknowledgment](#acknowledgment)
+- [License](#license)
+- [Project Status](#status)
 
-Work with your group to resolve the following issues:
+<a id="badges"></a>
+## Badges
+![Maury Hughes IV](https://img.shields.io/badge/Maury%20Hughes%20IV-5A2BE2)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-* As a user, I want to see a list of matchups.
+<a id="installation"></a>
+## Installation
+User can run npm i to install all needed. It is all listed on package.json
 
-* As a user, I want to be able to create a matchup between two technologies.
+<a id="usage"></a>
+## Usage
+The main use for this application is for reference of a working RESTful API converted into a GraphQL API using Apollo Server & Apollo Client.
 
-* As a user, I want to be able to vote for one of the two technologies in the matchup.
+<a id="Visuals"></a>
+## Visuals
+NA
 
-* As a user, I want to see the current number of votes for each technology in the matchup.
+<a id="tests"></a>
+## Tests
+This was test in the local host. User can do the same or in their personal preference application.
 
-## Acceptance Criteria
+<a id="questions"></a>
+## Questions
+If you have any questions about the contents. Please feel free to reach out!
+Here is my [Github](https://github.com/MauryIV) as well as my email <mauryhughesiv@gmail.com>.
 
-The mini-project is complete when the following criteria are met:
+<a id="roadmap"></a>
+## Roadmap
+NA
 
-* The `/` homepage route renders a list of technologies.
+<a id="contributing"></a>
+## Contributing
+Always open to suggestions and ways to improve my code.
 
-* The `/matchup` route renders a form to choose two technologies to create a matchup.
+<a id="acknowledgment"></a>
+## Authors and Acknowledgment
+Most the code was provided by DU Coding Bootcamp, as well as reference and knowledge provided in order for me to complete this properly.
 
-* The `/matchup/:id` route renders a matchup to vote on.
+<a id="license"></a>
+## License
+MIT License © 2024 Maury Hughes IV
+Please refer to this link, [License: MIT](https://opensource.org/licenses/MIT) for more information.
 
-* An Apollo Server is set up to use GraphQL queries and mutations to fetch and modify data, replacing the existing RESTful API.
+<a id="status"></a>
+## Project Status
+Complete
 
-* Apollo Client is set up so that requests can communicate with an Apollo Server.
-
-* A 404 page `NotFound` is rendered if the user tries to access a page that doesn't exist.
-
----
-
-## 💡 Hints
-
-* After implementing GraphQL on the server, what tool can you use to test the queries and mutations?
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
-
-* Incorporate user authentication so that only logged-in users can create and vote on matchups.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+[back to top](#title)
