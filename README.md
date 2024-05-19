@@ -35,7 +35,10 @@ The main use for this application is for reference of a working RESTful API conv
 
 <a id="Visuals"></a>
 ## Visuals
-NA
+![Screenshot 2024-05-18 at 7 58 09 PM](https://github.com/MauryIV/tech-matchup-app/assets/146037880/a6542881-377c-429f-98d9-3cd8c6632f82)
+![Screenshot 2024-05-18 at 7 58 34 PM](https://github.com/MauryIV/tech-matchup-app/assets/146037880/fdfa9e60-b79a-4905-8b96-4e97052b2868)
+![Screenshot 2024-05-18 at 7 58 45 PM](https://github.com/MauryIV/tech-matchup-app/assets/146037880/aa0eafd0-3114-4f6f-b3b4-431933a85660)
+![Screenshot 2024-05-18 at 7 58 00 PM](https://github.com/MauryIV/tech-matchup-app/assets/146037880/513931ed-7a2d-4db1-beaf-ed80f67f1acf)
 
 <a id="tests"></a>
 ## Tests
